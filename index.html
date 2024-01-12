@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX and jQuery CRUD</title>
+  </head>
+
+  <body>
+    <div class="formInput">
+      <form>
+        <label for="name">Name</label>
+        <input type="text" name="fullName" id="fullName" />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+    <div class="showDataTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Delete Button</th>
+          </tr>
+        </thead>
+        <tbody id="showData"></tbody>
+      </table>
+    </div>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
