@@ -99,6 +99,8 @@ function deletePost(id){
         }
     });
 }
+// Still need a update function added, but this is a start.
+
 
 // Call the getPosts function when the script loads
 getPosts();
