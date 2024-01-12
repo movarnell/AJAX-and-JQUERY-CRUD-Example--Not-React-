@@ -24,6 +24,7 @@ function showPosts(posts){
       // Insert new cells in the row
       let cell1 = row.insertCell(0);
       let cell2 = row.insertCell(1);
+        let cell3 = row.insertCell(2);
       // Set the innerHTML of the cells to the post's name and email
       cell1.innerHTML = post.name;
       cell2.innerHTML = post.email;
@@ -33,6 +34,7 @@ function showPosts(posts){
         button.onclick = function(){
             deletePost(post.id);
         }
+        cell3.appendChild(button);
     });
 }
 
